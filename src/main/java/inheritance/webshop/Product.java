@@ -20,9 +20,40 @@ package inheritance.webshop;
  * Note that this class itself does not utilize inheritance, but it will
  * extended by other classes in the exercise.
  */
-public class Product {
+public class Product extends WebShop {
+    private String title;
+    private String description;
+    private double price; 
+
 
     public Product(String title, String description, double price) {
         // TODO: add instance variables and complete the constructor
+        this.title = title;
+        this.description = description;
+        this.price = price;
     }
+
+
+    public String getTitle() {
+        return title;
+    }
+
+
+    public String getDescription() {
+        return description;
+    }
+
+
+    public double getPrice() {
+        return price;
+    }
+
+
+    @Override
+    public String toString() {
+        return super.toString() + "Product [title=" + title + ", description=" + description + ", price=" + price + "]";
+    }
+    
+
+    
 }

@@ -1,5 +1,7 @@
 package inheritance.webshop;
 
+import java.time.LocalDateTime;
+
 /**
  * The Ticket class represents a concert or sports event ticket in a webshop.
  * Like the Vehicle class, the Ticket class should inherit the Product class.
@@ -13,6 +15,34 @@ package inheritance.webshop;
  * also skip this class and continue with the next part of the exercise if you
  * feel that you have understood the concept of inheritance.
  */
-public class Ticket {
+public class Ticket extends Product{
+    private LocalDateTime eventDateTime;
+    private double ticketPrice;
+
+    public Ticket(String title, String description, double price, LocalDateTime eventDateTime, double ticketPrice) {
+        super(title, description, price);
+        this.eventDateTime = eventDateTime;
+        this.ticketPrice = ticketPrice;
+    }
+
+    
+    public LocalDateTime getEventDateTime() {
+        return eventDateTime;
+    }
+
+
+    public double getTicketPrice() {
+        return ticketPrice;
+    }
+
+
+    @Override
+    public String toString() {
+        return super.toString() + "Ticket [eventDateTime=" + eventDateTime + ", ticketPrice=" + ticketPrice + "]";
+    }
+
+    
+    
+
 
 }

@@ -23,12 +23,12 @@ public class WebShop {
      */
     public List<Product> combineListsOfProducts(List<Product> mugs, List<Product> shirts,
             List<Vehicle> cars, List<Vehicle> bikes) {
-            
-            List<Product> products = new ArrayList();
-            products.addAll(mugs);
-            products.addAll(shirts);
-            products.addAll(cars);
-            products.addAll(bikes);
+
+        List<Product> products = new ArrayList();
+        products.addAll(mugs);
+        products.addAll(shirts);
+        products.addAll(cars);
+        products.addAll(bikes);
 
         return products; // TODO: implement this method
     }
@@ -48,8 +48,7 @@ public class WebShop {
 
         if (obj instanceof Vehicle) {
             return true;
-        }
-        else{
+        } else {
             return false; // TODO: implement this method
 
         }
@@ -66,8 +65,7 @@ public class WebShop {
     public boolean isProduct(Object obj) {
         if (obj.getClass() == Product.class) {
             return true;
-        }
-        else{
+        } else {
             return false; // TODO: implement this method
 
         }

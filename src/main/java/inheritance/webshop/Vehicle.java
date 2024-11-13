@@ -39,30 +39,21 @@ public class Vehicle extends Product {
         this.year = year;
     }
 
-
-    
     public String getManufacturer() {
         return manufacturer;
     }
-
-
 
     public String getModel() {
         return model;
     }
 
-
-
     public int getYear() {
         return year;
     }
-
-
 
     @Override
     public String toString() {
         return super.toString() + "Vehicle [manufacturer=" + manufacturer + ", model=" + model + ", year=" + year + "]";
     }
 
-    
 }

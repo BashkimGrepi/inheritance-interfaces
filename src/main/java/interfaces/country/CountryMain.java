@@ -1,6 +1,8 @@
 package interfaces.country;
 
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -18,7 +20,7 @@ public class CountryMain {
         Country swe = new Country("Sweden", 10_261_767);
 
         List<Country> countries = Arrays.asList(den, fin, ice, nor, swe);
-        countries.sort(null); // A null value indicates that the elements' natural ordering should be used
+        Collections.sort(countries); // A null value indicates that the elements' natural ordering should be used
 
         for (Country c : countries) {
             System.out.println(c);

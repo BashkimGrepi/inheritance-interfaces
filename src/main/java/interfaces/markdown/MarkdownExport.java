@@ -1,4 +1,5 @@
 package interfaces.markdown;
+import interfaces.markdown.MarkdownExport;
 
 /**
  * This interface is used to add markdown export functionality to a class.

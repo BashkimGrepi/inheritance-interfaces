@@ -8,7 +8,7 @@ import inheritance.webshop.Product;
 
 public class ProductMarkdownTest {
 
-    private final Product coffeeMug = new Product("Coffee mug", "A mug for coffee", 5.99, null);
+    private final Product coffeeMug = new Product("Coffee mug", "A mug for coffee", 5.99);
 
     @Test
     public void productClassMustImplementMarkdownExportInterface() {

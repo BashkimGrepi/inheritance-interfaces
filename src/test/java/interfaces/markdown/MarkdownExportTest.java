@@ -13,7 +13,7 @@ import org.junit.platform.commons.util.ReflectionUtils;
 
 public class MarkdownExportTest {
 
-    private final Pizza margherita = new Pizza("Margherita", 8.99, List.of("tomato sauce", "mozzarella", "basil"));
+    private final Pizza margherita = new Pizza("Margherita", 8.99, List.of("tomato sauce", "mozzarella", "basil"), null);
 
     @Test
     public void theInterfaceMustHaveExportMarkdownMethod() {

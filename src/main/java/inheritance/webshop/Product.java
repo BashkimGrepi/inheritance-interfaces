@@ -26,7 +26,7 @@ public class Product extends WebShop {
     private double price; 
 
 
-    public Product(String title, String description, double price) {
+    public Product(String title, String description, double price, Object object) {
         // TODO: add instance variables and complete the constructor
         this.title = title;
         this.description = description;
